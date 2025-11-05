@@ -141,10 +141,10 @@ def view_random_image(target_dir, target_class):
 img = view_random_image(data_dir,
                         target_class=random.choice(class_names))
 ```
-<img width="320" height="240" alt="Figure_1" src="https://github.com/user-attachments/assets/ebcc7ae4-9371-44b9-a2f1-138b927decfb" />
-<img width="320" height="240" alt="Figure_2" src="https://github.com/user-attachments/assets/746bf9e8-29bf-4175-be81-f1e397bc8671" />
-<img width="320" height="240" alt="Figure_3" src="https://github.com/user-attachments/assets/9b5513e0-3928-4b2c-a224-ed33c0790b22" />
-<img width="320" height="240" alt="Figure_4" src="https://github.com/user-attachments/assets/7718aca4-7beb-488d-81fb-20e6bb080aed" />
+<img width="420" height="320" alt="Figure_1" src="https://github.com/user-attachments/assets/ebcc7ae4-9371-44b9-a2f1-138b927decfb" />
+<img width="420" height="320" alt="Figure_2" src="https://github.com/user-attachments/assets/746bf9e8-29bf-4175-be81-f1e397bc8671" />
+<img width="420" height="320" alt="Figure_3" src="https://github.com/user-attachments/assets/9b5513e0-3928-4b2c-a224-ed33c0790b22" />
+<img width="420" height="320" alt="Figure_4" src="https://github.com/user-attachments/assets/7718aca4-7beb-488d-81fb-20e6bb080aed" />
 
 ## Normalize the data using ```ImageDataGenerator```
 ```python
@@ -224,27 +224,27 @@ plt.show()
 
 ## Plot random predictions from dataset:
 
-<img width="320" height="240" alt="pred_1" src="https://github.com/user-attachments/assets/03aed626-0bb6-4f69-a552-cca95ed9a448" />
-<img width="320" height="240" alt="pred_2" src="https://github.com/user-attachments/assets/a66b3071-e460-4b1b-801b-3c97d4263846" />
-<img width="320" height="240" alt="pred_3" src="https://github.com/user-attachments/assets/3cfcf221-5fb7-441a-850a-f32fb0155038" />
-<img width="320" height="240" alt="pred_4" src="https://github.com/user-attachments/assets/9da19dca-b4c7-4267-81cd-de8af83417bb" />
+<img width="420" height="320" alt="pred_1" src="https://github.com/user-attachments/assets/03aed626-0bb6-4f69-a552-cca95ed9a448" />
+<img width="420" height="320" alt="pred_2" src="https://github.com/user-attachments/assets/a66b3071-e460-4b1b-801b-3c97d4263846" />
+<img width="420" height="320" alt="pred_3" src="https://github.com/user-attachments/assets/3cfcf221-5fb7-441a-850a-f32fb0155038" />
+<img width="420" height="320" alt="pred_4" src="https://github.com/user-attachments/assets/9da19dca-b4c7-4267-81cd-de8af83417bb" />
 
 ## Medical Scan kidney cancer prediction:
 
 Images from [Medical Scan Classification Dataset](https://www.kaggle.com/datasets/arjunbasandrai/medical-scan-classification-dataset)
 
-<img width="320" height="240" alt="kt" src="https://github.com/user-attachments/assets/8c8a1685-071d-4d5a-99fe-e6a87999831b" />
-<img width="320" height="240" alt="pred_5" src="https://github.com/user-attachments/assets/a453d8db-62cf-4d22-a336-beba9c4d7b83" />
+<img width="420" height="320" alt="kt" src="https://github.com/user-attachments/assets/8c8a1685-071d-4d5a-99fe-e6a87999831b" />
+<img width="420" height="320" alt="pred_5" src="https://github.com/user-attachments/assets/a453d8db-62cf-4d22-a336-beba9c4d7b83" />
 
 Images from [Google](https://www.google.com/search?sca_esv=92bdb361676e0929&rlz=1C1SQJL_frES1021ES1021&sxsrf=AE3TifOeUygsca-gGXsAAx3rVM1loGDC8A:1762336214487&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeh7Rd2Okf7KLGPdxBrNMaIm3bjKczkW42t0bjubXjlXqwvu7QbcZ7V2iVSmFSoiz8Tc1Ch_WXeS7BT_VuVdajZxCDmNl6KDQErOZ_7pCX_vO5TihHSiszq7vifOl0LMHwYRW2AxjriArJgIQOTGxABpgmx7kw0yFJrdqwxfmzI__CGDc5Q&q=Medical+Scan+kidney+cancer&sa=X&ved=2ahUKEwjqgqiA3tqQAxVV8DQHHSqnO2oQtKgLegQIFRAB&biw=1536&bih=777&dpr=2.5)
 
 
-<img width="320" height="240" alt="kt_2" src="https://github.com/user-attachments/assets/395a89e3-785e-4227-8185-542d5dd1f9bc" />
-<img width="320" height="240" alt="pred_kt2_f2" src="https://github.com/user-attachments/assets/154dfd69-e1ed-46d2-a09f-ce5ab96b6a11" />
+<img width="420" height="320" alt="kt_2" src="https://github.com/user-attachments/assets/395a89e3-785e-4227-8185-542d5dd1f9bc" />
+<img width="420" height="320" alt="pred_kt2_f2" src="https://github.com/user-attachments/assets/154dfd69-e1ed-46d2-a09f-ce5ab96b6a11" />
 
 
-<img width="320" height="320" alt="kt_2_f" src="https://github.com/user-attachments/assets/c9abb39a-cf46-45d9-adec-f4e6db62aceb" />
-<img width="320" height="320" alt="pred_kt_2" src="https://github.com/user-attachments/assets/4bc88ebf-710e-4537-95de-80b181190e43" />
+<img width="420" height="320" alt="kt_2_f" src="https://github.com/user-attachments/assets/c9abb39a-cf46-45d9-adec-f4e6db62aceb" />
+<img width="420" height="320" alt="pred_kt_2" src="https://github.com/user-attachments/assets/4bc88ebf-710e-4537-95de-80b181190e43" />
 
 
 
