@@ -1,26 +1,13 @@
 # kidney-cancer-diagnosis
 A convolutional neural network (CNN) binary-classification model for kidney cancer diagnosis.
 # Dataset
-[Multi Cancer Dataset](https://www.kaggle.com/datasets/obulisainaren/multi-cancer/data)
+[Kidney Cancer Dataset](https://www.kaggle.com/datasets/djaidwalid/kidney-cancer-dataset/data)
 
-Citation: Obuli Sai Naren. (2022). Multi Cancer Dataset [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/3415848
+Citation: https://www.kaggle.com/datasets/djaidwalid/kidney-cancer-dataset/data
 
-**DataSet structure:**
+## DataSet structure:
 
-| Cancer Type                  | Classes | Images  |
-|------------------------------|----------|---------|
-| Acute Lymphoblastic Leukemia | 4        | 20,000  |
-| Brain Cancer                 | 3        | 15,000  |
-| Breast Cancer                | 2        | 10,000  |
-| Cervical Cancer              | 5        | 25,000  |
-| Kidney Cancer                | 2        | 10,000  |
-| Lung and Colon Cancer        | 5        | 25,000  |
-| Lymphoma                     | 3        | 15,000  |
-| Oral Cancer                  | 2        | 10,000  |
-
-I selected for this model only the Kidney Cancer directory.
-
-As a first step in the modeling process, the data was split after being downloaded into two main directories ```train``` and ```test``` following this structure:
+Kidney cancer dataset is composed of two main directories ```train``` and ```test``` following this structure:
 ```
 \train
   |
@@ -43,44 +30,14 @@ As a first step in the modeling process, the data was split after being download
       |__1000 images
 ```
 
-```python
-import os
-import shutil
-import random
-from sklearn.model_selection import train_test_split
+## Dataset details
+This dataset is divided into two main directories `test` and `train` each divided into two other directories  `kidney_normal` and `kidney_tumor`.
+ 
+|Path|	Subclass|Description|
+|-----|-----------|--------------|
+|kidney_normal|	Normal|	Healthy kidney tissues|
+|kidney_tumor|	Tumor|	Tumor-affected kidney tissues|
 
-# Paths to your original dataset
-base_dir = 'C:/Users/walid/.cache/kagglehub/datasets/obulisainaren/multi-cancer/versions/3/Multi Cancer/Multi Cancer/Kidney Cancer/'
-categories = ['kidney_normal', 'kidney_tumor']
-
-# Paths for train/test splits
-train_dir = os.path.join(base_dir, 'train')
-test_dir = os.path.join(base_dir, 'test')
-
-# Create directories if they don't exist
-for split_dir in [train_dir, test_dir]:
-    for category in categories:
-        os.makedirs(os.path.join(split_dir, category), exist_ok=True)
-
-# Split ratio
-test_ratio = 0.2  # 20% for test data
-
-for category in categories:
-    folder = os.path.join(base_dir, category)
-    images = os.listdir(folder)
-    images = [img for img in images if img.lower().endswith(('.png', '.jpg', '.jpeg'))]
-
-    # Train-test split
-    train_images, test_images = train_test_split(images, test_size=test_ratio, random_state=42)
-
-    # Copy images
-    for img in train_images:
-        shutil.move(os.path.join(folder, img), os.path.join(train_dir, category, img))
-    for img in test_images:
-        shutil.move(os.path.join(folder, img), os.path.join(test_dir, category, img))
-
-print("Dataset successfully split into train and test folders.")
-```
 
 # Code architecture
 ```python
